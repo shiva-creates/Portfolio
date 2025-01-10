@@ -1,0 +1,806 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F0F1FA;
+    font-family: "Kanit", serif;
+    font-optical-sizing: auto;
+    font-style: normal
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    user-select: none;
+}
+
+
+/* Navbar Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 95%;
+    z-index: 9999;
+    height: 80px;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 20rem;
+    user-select: none;
+}
+
+.nav-logo-img{
+    height: 70px;
+    /* display: none; */
+}
+
+
+.music-btn{
+    display: flex;
+    background: #e3e5ed;
+    border-radius: -13% / 50%;
+    border-radius: 50%;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+
+.music-btn-img {
+    height: 15px;
+}
+
+.action-btn{
+    background: #2B2E3A;
+    border-radius: 16% / 50%;
+    padding: 0.5rem 2rem; 
+    color: white;
+    font-size: 1vw;
+}
+
+.action-btn:hover{
+    background: #0f1015;
+}
+.menu-btn{
+    background: #e3e5ed;
+    border-radius: 16% / 50%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+    background: #d9dbe4;
+}
+
+.hamburger-menu-contianer{
+    position: absolute;
+    top: 80%;
+    z-index: 99;
+    width: inherit;
+    font-size: 1.2vw;
+    opacity: 0;
+    color: #000;
+}
+
+.menu-option-container{
+        background: #ffffff;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+}
+
+.menu-option{
+    padding: 2rem;
+    display: flex;
+    transition: all 0.3s ease-out;
+}
+
+.menu-option:hover{
+    background: #e3e5ed;
+}
+
+.email-redirect-txt{
+    color: white;
+}
+
+.resume-option{
+    margin-top: 10px;
+    background: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.resume-option:hover{
+    background: #bcbec3;
+    color: #000 !important;
+}
+
+.resume-option:hover .email-redirect-txt{
+    color: black;
+}
+
+
+.music-off{
+    display: none;
+}
+
+.dot-one{
+    display: block;
+    height: 5px;
+    width:5px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+
+.hero-contianer{
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+.outlined-txt{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #f0f1fa;
+}
+
+
+.heading-txt{
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 120px;
+}
+
+.dev-intro{
+    font-size: 1.4vw;
+    width: 500px;
+    color: #333333;
+    font-weight: 300;
+    padding-top: 9rem;
+}
+
+
+.hero-img{
+    height: 855px;
+    padding: 0px 40px;
+    position: absolute;
+    top: 3%;
+    z-index: -1;
+    left: 15%;
+}
+
+
+
+
+
+.scroll-note{
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    background: #e3e5ed;
+    padding: 0.7rem 2rem;
+    border-radius: 11% / 50%;
+
+}
+
+
+.hero-contianer{
+    padding: 40px;
+    width: calc(100vw - 100px);
+    overflow-y: hidden;
+}
+
+
+.outlined-txt{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #f0f1fa;
+}
+
+
+.heading-txt{
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 120px;
+}
+
+.dev-intro{
+    font-size: 1.4vw;
+    width: 500px;
+    color: #333333;
+    font-weight: 300;
+    padding-top: 9rem;
+}
+
+
+.hero-img{
+    height: 855px;
+    padding: 0px 40px;
+    position: absolute;
+    top: 3%;
+    z-index: -1;
+    left: 15%;
+}
+
+.hamburger-menu-contianer{
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    width: inherit;
+    font-size: 20px;
+}
+
+
+
+.about-section{
+    padding-top: 6rem;
+}
+
+.outlined-txt{
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #f0f1fa;
+}
+
+.about-hero-img{
+    width: 100%;
+}
+
+.padding-top{
+    padding-top: 6rem;
+}
+
+.about-me-para-container{
+    padding: 0rem 20%;
+}
+
+.about-me-para{
+    padding: 1.5rem 0;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.Toolbox-container{
+    padding: 40px;
+}
+
+.Experience-container{
+    padding: 40px;
+}
+
+.about-real-me-container{
+    padding: 40px;
+}
+
+.tool-name{
+padding: 2rem;
+background: #ffffff00;
+border-bottom: 1px solid black;
+font-size: 2.8vw;
+margin: auto;
+text-align: center;
+}
+
+.tool-one{
+    border-top:1px solid black
+}
+
+.exp-header{
+    padding-bottom: 1rem;
+}
+
+.exp-name{
+    padding: 2rem;
+    background: #ffffff00;
+    border-bottom: 1px solid black;
+    font-size: 2.8vw;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid;
+}
+
+.exp-date{
+    font-size: 1.2rem;
+}
+
+
+.realme-para-container{
+    padding: 1rem 20%;
+}
+
+.about-real-me-para{
+    padding: 2rem 0px;
+    font-size: 1.1vw;
+    font-family: "Mulish", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.real-me-book-image {
+    width: -webkit-fill-available;
+    margin: 0 2rem 0rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 5 / 5; width: 100%; }
+    .div2 { grid-area: 5 / 1 / 7 / 3; width: 100%;  }
+    .div3 { grid-area: 5 / 3 / 7 / 5; width: 100%;  }
+    .div4 { grid-area: 5 / 5 / 7 / 7; width: 100%;  }
+    .div5 { grid-area: 3 / 5 / 5 / 7; width: 100%;  }
+    .div6 { grid-area: 1 / 5 / 3 / 7; width: 100%;  }
+
+
+/* Footer Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.marquee-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+.banner-container{
+    height: 10rem;
+    width: max-content;
+    background-color: #3e65e5;
+    color: white;
+    font-size: 7vw;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 1px;
+    gap: 40px;
+    overflow-x: hidden;
+    padding: 0 1rem;
+    will-change: transform;
+    animation: marquee-right 25s linear infinite running;
+    animation-delay: 0s;
+}
+
+@keyframes marquee-right{
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+}
+
+.dot-element{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.contact-container{
+    padding: 8rem 2rem 0rem 2rem;
+    height: 45vh;
+    background-color: #3e65e5;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.logo-section{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.logo-img{
+    height: 40px;
+}
+
+.logo-name{
+    font-size: 2.5vw;
+    color: white;
+    line-height: 100%;
+}
+
+.logo-outlined-txt{
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    color: #3e65e5;
+}
+
+.email-section, .link-section, .contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.color-white{
+    color: white;
+}
+
+.email{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    color: white;
+}
+
+.link-item{
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.link-item:hover{
+    text-decoration: underline;
+    }
+
+@media (max-width: 1300px) {
+
+
+    .hero-img{
+        height: 60vw;
+
+    }
+
+    .dev-intro {
+        font-size: 1.7vw;
+        width: 550px;
+    }
+
+    .hamburger-menu-contianer {
+        font-size: 1.6vw;
+    }
+
+
+
+    .about-me-para-container {
+        padding: 0rem 20%;
+        margin-top: 5rem;
+    }
+
+    .realme-para-container {
+        padding: 1rem 18%;
+    }
+
+    .about-me-para {
+        font-size: 1.3vw;
+    }
+
+    .about-real-me-para {
+        font-size: 1.3vw;
+    }
+
+
+
+
+
+    .logo-name {
+        font-size: 3vw;
+    }
+
+    .email {
+        font-size: 1.7vw;
+    }
+
+    .link-item {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 1025px) {
+
+
+    .dev-intro {
+        font-size: 2.2vw;
+        width: 550px;
+    }
+
+    .action-btn {
+        font-size: 1.3vw;
+    }
+
+    .menu-btn {
+        font-size: 1.3vw;
+    }
+
+    .about-me-para {
+        font-size: 1.6vw;
+    }
+
+    .about-real-me-para {
+        font-size: 1.6vw;
+    }
+
+    .about-me-para-container {
+        padding: 0rem 12%;
+        margin-top: 5rem;
+    }
+
+    .realme-para-container {
+        padding: 1rem 12%;
+    }
+
+
+
+    .logo-name {
+        font-size: 3.5vw;
+    }
+
+    .email {
+        font-size: 1.9vw;
+    }
+
+    .link-item {
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-contianer {
+        padding: 30px;
+    }
+
+
+    .intro-section {
+        padding: 0px;
+    }
+
+    .txt-logo-cotnainer{
+        padding-top: 1rem;
+    }
+
+    .action-btn {
+        font-size: 1.7vw;
+    }
+
+    .menu-btn {
+        font-size: 1.7vw;
+    }
+
+    .hamburger-menu-contianer {
+        font-size: 2.3vw;
+    }
+
+
+
+    .dot-element {
+        height: 35px;
+        width: 35px;
+    }
+
+
+    .about-me-para-container {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .about-me-para {
+        font-size: 2.1vw;
+    }
+
+    .about-real-me-para {
+        font-size: 2.1vw;
+    }
+
+    .realme-para-container {
+        padding: 1rem 0%;
+    }
+
+
+    .contact-container {
+        padding: 8rem 1rem 0rem 1rem;
+    }
+
+
+
+
+    .logo-name {
+        font-size: 4vw;
+    }
+    .email {
+        font-size: 2.2vw;
+    }
+    .link-item {
+        font-size: 2vw;
+    }
+
+    .banner-container {
+        height: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .intro-section {
+        padding: 20px;
+    }
+
+    .nav-logo-img {
+        height: 60px;
+    }
+
+
+    .action-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        font-size: 2vw;
+    }
+
+    .hamburger-menu-contianer {
+        font-size: 3vw;
+    }
+
+    .about-me-para {
+        font-size: 2.7vw;
+    }
+
+    .about-real-me-para {
+        font-size: 2.7vw;
+    }
+
+    .txt-logo-cotnainer {
+        padding-top: 1.2rem;
+    }
+
+    .heading-txt {
+        font-size: 8vw;
+    }
+
+    .dev-intro {
+        font-size: 3vw;
+        width: 60vw;
+    }
+
+
+    .hero-img {
+        height: 82vw;
+        padding: 0;
+        top: 8%;
+    }
+
+    .scroll-note {
+        font-size: 1.9vw;
+        top: 70%;
+    }
+
+    .work-container {
+        padding: 0 20px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .project-card-header {
+        font-size: 4.5vw;
+    }
+
+    .project-card-desc {
+        font-size: 2.7vw;
+    }
+
+    .skill-name {
+        font-size: 2.6vw;
+        padding: 0.5rem;
+    }
+
+    .skill-card-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem;
+        flex-direction: column;
+        padding: 5rem 20px 5rem;
+    }
+
+    .skill-card{
+        width: 90%;
+    }
+
+    .skill-card-header {
+        font-size: 4vw;
+    }
+
+
+    .logo-name {
+        font-size: 7vw;
+    }
+
+    .contact-container {
+        height: auto;
+        padding: 5rem 1rem 3rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .email-section, .link-section, .contact-section {
+        gap: 20px;
+    }
+
+    .email {
+        font-size: 3.1vw;
+    }
+
+    .link-item {
+        font-size: 2.8vw;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-contianer {
+        padding: 10px;
+        width: initial;
+    }
+
+    .menu-btn {
+        font-size: 3vw;
+    }
+
+    .heading-txt {
+        font-size: 9vw;
+    }
+
+
+    .intro-section {
+        width: 92%;
+        height: 70px;
+    }
+    .about-me-para {
+        font-size: 3vw;
+    }
+
+    .about-real-me-para {
+        font-size: 3vw;
+    }
+
+
+    .prject-detail-section {
+        font-size: 3.5vw;
+    }
+
+    .scroll-note {
+        display: none;
+    }
+
+    .link-item {
+        font-size: 3.5vw;
+    }
+
+    .logo-name {
+        font-size: 10vw;
+    }
+
+    .email {
+        font-size: 5vw;
+    }
+
+
+}
+
+
