@@ -335,6 +335,7 @@ text-align: center;
 }
 
 .real-me-book-image {
+    border: 5px solid white;
     width: -webkit-fill-available;
     margin: 0 2rem 0rem;
 }
