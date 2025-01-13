@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     let aboutHeroTl = gsap.timeline();
     let aboutRealmeTl = gsap.timeline();
-    let menuTl = gsap.timeline();
+    let menuTl = gsap.timeline({ paused: true });
     let mm = gsap.matchMedia();
     var toggle = true;
 
@@ -17,50 +17,60 @@ document.addEventListener("DOMContentLoaded", (event) => {
             window.location.href = '/';
         })
 
-     // Animation for menu toogle animation with ratoation and y axis movements
-    menuTl.fromTo(".hamburger-menu-contianer", 
-        { opacity: 1,
-            display:'block',
-        y: 0  
-         }, 
-        { opacity: 0,
-            display: 'none',
-            y: 50,
-        duration: 0.2,
-    });
 
-    menuTl.fromTo(".menu-option-container", 
-        { 
-            rotation: 0  
-         }, 
-        { 
-            rotation: 8,
-    }, "-=.2");
+// Animation for menu toggle (reversed start and end states)
+menuTl.fromTo(
+    ".hamburger-menu-contianer",
+    { 
+        opacity: 0, 
+        display: "none", 
+        y: 50 
+    }, 
+    { 
+        opacity: 1, 
+        display: "block", 
+        y: 0, 
+        duration: 0.2 
+    }
+  );
+  
+  menuTl.fromTo(
+    ".menu-option-container",
+    { 
+        rotation: 8 
+    },
+    { 
+        rotation: 0, 
+        duration: 0.2 
+    },"-=.2"
+  );
+  
+  menuTl.fromTo(
+    ".resume-option",
+    { 
+        y: 20, 
+        rotation: -8 },
+    { 
+        y: 0, 
+        rotation: 0, 
+        duration: 0.2 
+    },"-=.2"
+  );
 
-    menuTl.fromTo(".resume-option", 
-        { 
-            y: 0,
-            rotation: 0  
-         }, 
-        {
-            y: 20,
-            rotation: -8
-    }, "-=.2");
+    // Toggling menu on click
+    menu.addEventListener('click', () => {
+        toggle = !toggle;
+        if (toggle ?  menuTl.reverse() : menuTl.play());
+        if (toggle ? gsap.to(dotContainer, {rotation: 0, duration : 0.3}) : gsap.to(dotContainer, {rotation: 90, duration : 0.3}));
+    })
 
-        // Toggling menu on click
-        menu.addEventListener('click', () => {
+    menuItems.forEach((menuItem) => {
+        menuItem.addEventListener('click', () => {
             toggle = !toggle;
-            if (toggle ? menuTl.play() : menuTl.reverse());
+            menuTl.reverse();
             if (toggle ? gsap.to(dotContainer, {rotation: 0, duration : 0.3}) : gsap.to(dotContainer, {rotation: 90, duration : 0.3}));
-        })
-    
-        menuItems.forEach((menuItem) => {
-            menuItem.addEventListener('click', () => {
-                console.log(menuItem);
-                menuTl.reverse();
-                gsap.to(dotContainer, { rotation: 90, duration: 0.3 });
-            });
         });
+    });
     
 mm.add("(min-width: 769px)", () => {
     aboutHeroTl.to('.about-hero-img', {

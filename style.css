@@ -808,6 +808,12 @@ text-decoration: underline;
         background-color: #636363;
     } */
 
+    .nav-logo-img {
+        height: 60px;
+        display: none;
+        cursor: pointer;
+    }
+
     .menu-btn {
         font-size: 3vw;
     }
@@ -867,5 +873,19 @@ text-decoration: underline;
 
     .email {
         font-size: 5vw;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .hero-contianer {
+        height: calc(70vh - 100px);
+        padding: 20px;
+    }
+}
+@media (max-width: 380px) {
+    .hero-contianer {
+        height: calc(80vh - 100px);
+        padding: 20px;
     }
 }
