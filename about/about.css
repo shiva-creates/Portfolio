@@ -342,7 +342,7 @@ text-align: center;
 }
 
 .exp-date{
-    font-size: 1.2rem;
+    font-size: 1.1vw;
 }
 
 
@@ -515,6 +515,10 @@ text-align: center;
         font-size: 1.3vw;
     }
 
+    .exp-date{
+        font-size: 1.3vw;
+    }
+
 
 
 
@@ -553,6 +557,10 @@ text-align: center;
     }
 
     .about-real-me-para {
+        font-size: 1.6vw;
+    }
+
+    .exp-date{
         font-size: 1.6vw;
     }
 
@@ -628,6 +636,10 @@ text-align: center;
         font-size: 2.1vw;
     }
 
+    .exp-date{
+        font-size: 2.1vw;
+    }
+
     .realme-para-container {
         padding: 1rem 0%;
     }
@@ -683,6 +695,10 @@ text-align: center;
     }
 
     .about-real-me-para {
+        font-size: 2.7vw;
+    }
+
+    .exp-date{
         font-size: 2.7vw;
     }
 
@@ -803,6 +819,10 @@ text-align: center;
     }
 
     .about-real-me-para {
+        font-size: 3vw;
+    }
+
+    .exp-date{
         font-size: 3vw;
     }
 
