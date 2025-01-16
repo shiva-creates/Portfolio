@@ -699,6 +699,10 @@ a {
     
     @media (max-width: 600px) {
 
+        .padding-top {
+            padding: 6rem 20px 1rem 20px;
+        }
+
         .intro-section {
             padding: 20px;
         }

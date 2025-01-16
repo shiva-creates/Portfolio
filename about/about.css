@@ -236,7 +236,7 @@ a {
 
 .hero-contianer{
     padding: 40px;
-    width: calc(100vw - 100px);
+    /* width: calc(100vw - 100px); */
     overflow-y: hidden;
 }
 
@@ -282,7 +282,7 @@ a {
 
 
 .about-section{
-    padding-top: 6rem;
+    padding-top: calc(4rem - 40px);
 }
 
 .outlined-txt{
@@ -675,8 +675,17 @@ text-align: center;
 
 @media (max-width: 600px) {
 
-    .intro-section {
+
+    .padding-top {
+        padding-top: 3rem;
+    }
+
+    .hero-contianer {
         padding: 20px;
+    }
+
+    .intro-section {
+        padding: 0px;
     }
 
     .nav-logo-img {
@@ -735,6 +744,18 @@ text-align: center;
     .scroll-note {
         font-size: 1.9vw;
         top: 70%;
+    }
+
+    .Toolbox-container {
+        padding: 20px;
+    }
+
+    .Experience-container {
+        padding: 20px;
+    }
+
+    .about-real-me-container {
+        padding: 20px;
     }
 
     .work-container {
@@ -807,7 +828,7 @@ text-align: center;
 @media (max-width: 480px) {
 
     .hero-contianer {
-        padding: 10px;
+        padding: 20px;
         width: initial;
     }
 
