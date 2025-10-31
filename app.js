@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }, 
     { 
         opacity: 1, 
-        display : 'inline',
+        display : 'inline-block',
         scrollTrigger: {
             trigger: '.hero-contianer',
             scrub: 1,
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }, 
         { 
             opacity: 1, 
-            display : 'inline',
+            display : 'inline-block',
             scrollTrigger: {
                 trigger: '.hero-contianer',
                 scrub: 1,

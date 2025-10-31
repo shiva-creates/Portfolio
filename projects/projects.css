@@ -76,9 +76,15 @@ a {
 }
 
 .nav-logo-img{
-    height: 70px;
-    /* display: none; */
+    display: inline-block;
     cursor: pointer;
+    height: 70px;
+    width: 70px;
+    -webkit-mask: url('../images/nav-logo.webp') no-repeat center / contain;
+    mask: url('../images/nav-logo.webp') no-repeat center / contain;
+    background: rgba(0, 0, 0, 0.02);
+    -webkit-backdrop-filter: invert(1);
+    backdrop-filter: invert(1);
 }
 
 
